@@ -3,7 +3,7 @@
 #Mob programming screen blanking timer by Steve Amor
 #For the Raspberry Pi - add to /etc/xdg/lxsession/LXDE-pi/autostart
 
-import pygame, sys, time
+import pygame, sys, time, os
 from pygame.locals import *
 
 # constants
@@ -55,6 +55,8 @@ def waitForSpaceKey():
 
 while True:
 	time.sleep(TIMEOUT)
+	os.system("xdtool mousemove 2000 2000 click 1") # fix if you are hovered over a menu option
+	time.sleep(1)
 	pygame.init()
 
 #	windowSurface = pygame.display.set_mode((1360, 768), 0,32)
