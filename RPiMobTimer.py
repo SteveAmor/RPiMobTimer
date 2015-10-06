@@ -19,7 +19,7 @@ BLUE = (0, 0, 255)
 
 def message(msgText, backgroundColour):
 	windowSurface.fill(backgroundColour)
-	basicFont = pygame.font.SysFont(None, 180)
+	basicFont = pygame.font.SysFont(None, 160)
 	text = basicFont.render(msgText, True, WHITE, backgroundColour)
 	textRect = text.get_rect()
 	textRect.centerx = windowSurface.get_rect().centerx
@@ -59,8 +59,8 @@ while True:
 	time.sleep(1)
 	pygame.init()
 
-#	windowSurface = pygame.display.set_mode((1360, 768), 0,32)
-	windowSurface = pygame.display.set_mode((1360, 768), pygame.FULLSCREEN)
+#	windowSurface = pygame.display.set_mode((800, 600), 0,32)
+	windowSurface = pygame.display.set_mode((800, 600), FULLSCREEN)
 	message('Change Driver', BLACK)
 
 	countdown(WAITTIME)
