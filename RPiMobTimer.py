@@ -55,7 +55,7 @@ def waitForSpaceKey():
 
 while True:
 	time.sleep(TIMEOUT)
-	os.system("xdtool mousemove 2000 2000 click 1") # fix if you are hovered over a menu option
+	os.system("xdotool mousemove 2000 2000 click 1") # fix if you are hovered over a menu option
 	time.sleep(1)
 	pygame.init()
 
