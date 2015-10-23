@@ -10,4 +10,5 @@ Requires xdotool so that screen message appears when you are moused over a menu 
 If you want to set it to autorun then use the MobTimerAutostart.desktop script:
 
 `mkdir /home/pi/.config/autostart`
+
 `cp MobTimerAutostart.desktop /home/pi/.config/autostart/`
