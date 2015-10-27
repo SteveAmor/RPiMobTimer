@@ -1,5 +1,5 @@
 #Mob Programming Timer
-Graphical screen blanker written for the Raspberry Pi
+Graphical screen blanker written for the Raspberry Pi (as seen on the BBC). 
 
 Inspired by Woody Zuill
 
